@@ -40,6 +40,20 @@ $videotheque = array(
 echo '12.Mes films : <br>';
 //ajoutez votre code ici
 
+foreach($videotheque as $film){
+    foreach($film as $keys => $key){
+        if(is_array($key)){
+            echo "acteur : ";
+            foreach($key as $acteur){
+                echo $acteur;
+            }
+            echo "<br>";
+        }
+        else{
+            echo $keys . " : " . $key . "<br>";
+        }
+    }
+}
 
 //----------------------------------------
 //Afficher toutes les informations de la vidéothèque
@@ -49,4 +63,5 @@ echo '12.Mes films : <br>';
 
 echo '13.Mes films : <br>';
 //ajoutez votre code ici
+
 

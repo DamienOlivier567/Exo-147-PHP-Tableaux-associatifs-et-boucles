@@ -18,11 +18,11 @@ echo "<br><br>";
 //parcourir un tableau associatif
 
 $vehicule = array(
-  //clé => valeur
-  "nom" => "Aventador LP 700-4",
-  "marque" => "Lamborghini",
-  "puissance" => 700,
-  "prix" => 200000,
+    //clé => valeur
+    "nom" => "Aventador LP 700-4",
+    "marque" => "Lamborghini",
+    "puissance" => 700,
+    "prix" => 200000,
 );
 echo "6.Spécificité de ma voiture : <br>";
 //syntaxe : foreach($tableau as $cle => $valeur )
@@ -35,24 +35,24 @@ echo "<br><br>";
 //Parcourir un tableau associatif multidimensionnel
 
 $vehiculeConcession = array(
-  'Bas de gamme' => array(
-    'nom' => 'C1',
-       'marque' => 'Citroen',
-       'puissance' => 70,
-       'prix' => 10000,
-  ),
-  'Milieu de gamme' => array(
-    'nom' => 'Golf',
-       'marque' => 'VW',
-       'puissance' => 140,
-       'prix' => 270000,
-  ),
-  'Haut de gamme' => array(
-    'nom' => 'Aventador LP 700-4',
-       'marque' => 'Lamborghini',
-       'puissance' => 700,
-       'prix' => 200000,
-  ),
+    'Bas de gamme' => array(
+        'nom' => 'C1',
+        'marque' => 'Citroen',
+        'puissance' => 70,
+        'prix' => 10000,
+    ),
+    'Milieu de gamme' => array(
+        'nom' => 'Golf',
+        'marque' => 'VW',
+        'puissance' => 140,
+        'prix' => 270000,
+    ),
+    'Haut de gamme' => array(
+        'nom' => 'Aventador LP 700-4',
+        'marque' => 'Lamborghini',
+        'puissance' => 700,
+        'prix' => 200000,
+    ),
 );
 
 echo "7.Les voitures dans la concession :";
@@ -74,13 +74,19 @@ echo "<br><br>";
 //Créer un tableau pour les mois de l'année et afficher tous les mois de Janvier à Décembre;
 //Modifier et/ou remplacer les éléments ci-dessous
 
+$mois = ["janvier","fevrier","mars","avril","mai","juin","juillet","aout","septembre","octobre","novembre","decembre"];
+
 echo "8.Les mois depuis le début de l'année : <br>";
 
-
+foreach($mois as $item){
+    echo $item . "<br>";
+}
 
 //Afficher les mois de la fin de l'année jusqu'au début de l'année
 //Modifier et/ou remplacer les éléments ci-dessous
 
 echo "9.Les mois depuis la fin de l'année : <br>";
 
-
+for($i = count($mois);$i>=0;$i--){
+    echo $mois[$i] . "<br>";
+}
